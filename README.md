@@ -8,7 +8,7 @@
 
 1. Open [this Google sheets](https://docs.google.com/spreadsheets/d/138qLZNoickrhUjsVePpv-xgFBD7p0JMgv-JWefqZdyI/edit?usp=sharing) and copy it.
 2. Open the copied sheets file and go to `Add-ons`>`App Script`.
-2. Copy the code from [`sheets_tracking.gs`](https://github.com/habetuz/Sheets_Tracking/blob/v1.0.0/sheets_tracking.gs) to the Apps Script project.
+3. Copy the code from [`sheets_tracking.gs`](https://github.com/habetuz/Sheets_Tracking/blob/v1.0.0/sheets_tracking.gs) to the Apps Script project.
 
 ### 2. Deploy the project
 
@@ -51,7 +51,7 @@ To log custom updates like buton clicks or inputs use the `SHEETS_TRACKING.updat
 - `value` specifies the value you want to post.
 - `type` specifies the type of `value`. Currently supported are `number`, `string`, `boolean`, `number_increment` and `string_append`.
 
-#### Special types
+### Special types
 
 - `number_increment` increments the value in the spreadsheet by the given value.
 - `string_append` appends the given value to the value in the spreadsheet (with a new line seperator).
