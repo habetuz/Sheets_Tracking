@@ -45,7 +45,7 @@ SHEETS_TRACKING.start()
 
 ## Post custom updates
 
-To log custom updates like buton clicks or inputs use the `SHEETS_TRACKING.updateValue(name, value, type)` function.
+To log custom updates like button clicks or inputs use the `SHEETS_TRACKING.updateValue(name, value, type)` function.
 
 - `name` specifies the display name of the value.
 - `value` specifies the value you want to post.
@@ -54,4 +54,4 @@ To log custom updates like buton clicks or inputs use the `SHEETS_TRACKING.updat
 ### Special types
 
 - `number_increment` increments the value in the spreadsheet by the given value.
-- `string_append` appends the given value to the value in the spreadsheet (with a new line seperator).
+- `string_append` appends the given value to the value in the spreadsheet (with a new line separator).
