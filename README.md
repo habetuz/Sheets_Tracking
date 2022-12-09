@@ -4,6 +4,10 @@
 
 ## Installation
 
+``` diff
+- Tracking link clicks is not working when adding the script through jsdelivr!
+```
+
 ### 1. Create Google Sheets file
 
 1. Open [this Google sheets](https://docs.google.com/spreadsheets/d/138qLZNoickrhUjsVePpv-xgFBD7p0JMgv-JWefqZdyI/edit?usp=sharing) and copy it.
