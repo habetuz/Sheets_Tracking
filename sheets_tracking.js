@@ -115,7 +115,7 @@ var SHEETS_TRACKING = {
         // Get uuid for connection
         try {
             await fetch('https://www.uuidgenerator.net/api/guid')
-                .then(response => response.json())
+                .then(response => response.text())
                 .then(data => {
                     SHEETS_TRACKING._id = data
                 })
