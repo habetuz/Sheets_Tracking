@@ -4,15 +4,11 @@
 
 ## Installation
 
-``` diff
-- Tracking link clicks is not working when adding the script through jsdelivr!
-```
-
 ### 1. Create Google Sheets file
 
 1. Open [this Google sheets](https://docs.google.com/spreadsheets/d/138qLZNoickrhUjsVePpv-xgFBD7p0JMgv-JWefqZdyI/edit?usp=sharing) and copy it.
 2. Open the copied sheets file and go to `Add-ons`>`App Script`.
-3. Copy the code from [`sheets_tracking.gs`](https://github.com/habetuz/Sheets_Tracking/blob/v1.0.0/sheets_tracking.gs) to the Apps Script project.
+3. Copy the code from [`sheets_tracking.gs`](https://github.com/habetuz/Sheets_Tracking/blob/v1.1.0/sheets_tracking.gs) to the Apps Script project.
 
 ### 2. Deploy the project
 
@@ -29,7 +25,7 @@ Add `sheets_tracking.js` to your HTML.
 ``` html
 <body>
   <!-- Your html -->
-  <script src="https://cdn.jsdelivr.net/gh/habetuz/sheets_tracking@1.0.0/sheets_tracking.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/habetuz/sheets_tracking@1.1/sheets_tracking.js"></script>
   <script src="index.js"></script>
 <body>
 ```
@@ -45,6 +41,14 @@ SHEETS_TRACKING.sheetsURL = "https://script.google.com/macros/s/[deployment-id]/
 // Add the name of your spreadsheet here
 SHEETS_TRACKING.sheetName = "Tracking"
 SHEETS_TRACKING.start()
+```
+
+## Post link clicks
+
+Add the following to your `index.js` to log link clicks
+
+``` js
+document.addEventListener('mouseup', SHEETS_TRACKING.registerLinkClick)
 ```
 
 ## Post custom updates
